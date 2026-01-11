@@ -11,7 +11,7 @@ def main():
     # All inputs must be inside a page()
     page("Project Basics", "Set up your project.", [
         input("Project Name", required=True),
-        select("License", options=["mit", "apache-2.0", "none"], default="mit"),
+        select("License", options=["mit", "apache-2.0", "pies", "none"], default="mit"),
     ])
     
     # Computed values - ctx.project_name is available after the page
